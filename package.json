@@ -4,14 +4,21 @@
   "description": "This project is just a demo how to git",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chalk": "^2.4.2",
     "express": "^4.17.1",
-    "pug": "^2.0.3"
+    "lowdb": "^1.0.0",
+    "pug": "^2.0.3",
+    "shortid": "^2.2.14"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
