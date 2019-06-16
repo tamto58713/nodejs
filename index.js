@@ -1,9 +1,11 @@
 const express = require('express')
 app = express();
+app.set('view engine', 'pug')
 app.get('/', (req, res) => {
-    res.send("Hello World!!!")
+    res.render('header')
 })
 app.get('/users', (req, res) => {
-    res.send("This is route users")
+    res.render('users')
 })
+
 app.listen(8080)
