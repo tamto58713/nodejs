@@ -16,9 +16,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/users', userRoute)
-
 app.listen(8080, () => {
     console.log('Server listening on port', port)
-    console.log('Gia Huy looking')
 })
 
