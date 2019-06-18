@@ -1,5 +1,7 @@
-h1 Create User
-form(action="/users/create", method="POST")
-    label name
-    input(type="text", name="name")
-    button Create
+extends ../common
+block common
+    h1 Create User
+    form(action="/users/create", method="POST", class="form-inline")
+        label(class="form-control") name
+        input(type="text", name="name", class="form-control")
+        button(class="btn btn-success") Create

@@ -1,13 +1,15 @@
-h2 this is users page
+extends ../common
+block common
+    h2 this is users page
 
-a(href="/users/create") New
-form(action="/users/search", method="GET")
-    input(type='text', name="q")
-    button Search
-ul
-each user in users
-    li
-        span= user.name 
-        span &nbsp;
-        a(href='users/' + user.id) view
+    a(href="/users/create" class="ml-3") New
+    form(action="/users/search", method="GET", class="form-inline ml-3")
+        input(type='text', name="q", class="form-control" )
+        button(class="btn btn-success") Search
+    ul
+    each user in users
+        li(style="list-style: none", class="ml-3")
+            span= user.name 
+            span &nbsp;
+            a(href='users/' + user.id) view
 
