@@ -2,7 +2,8 @@ const express = require('express')
 const bodyParser = require("body-parser")
 const port = process.env.PORT || 8080
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/express-demo', {useNewUrlParser: true});
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true })
+
 const  userRoute = require('./router/user.route')
 var db = require('./db')
 
