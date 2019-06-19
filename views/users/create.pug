@@ -1,7 +1,15 @@
 extends ../common
 block common
-    h1 Create User
-    form(action="/users/create", method="POST", class="form-inline")
-        label(class="form-control") name
-        input(type="text", name="name", class="form-control")
-        button(class="btn btn-success") Create
+    .container
+        h1 Create User
+        if errors
+                each error in errors
+                    .alert.alert-danger= error
+        form(action="/users/create", method="POST")
+            .form-group
+                label(for="name") Name
+                input(type="text", name="name", id="name" class="form-control", value=values ? values.name : "")
+            .form-group
+                label(for="phone") Phone
+                input(type="text", name="phone", id="phone" class="form-control", value=values ? values.phone : "")  
+            button(class="btn btn-success") Create

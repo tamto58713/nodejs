@@ -2,23 +2,34 @@
   "users": [
     {
       "name": "Trần Tâm Tỏ",
-      "id": "JCo272X2s"
+      "id": "JCo272X2s",
+      "phone": "0901636364"
     },
     {
       "name": "minh phu",
-      "id": "eUAkLOjwV"
+      "id": "eUAkLOjwV",
+      "phone": "0901636364"
     },
     {
       "name": "Tran Quoc Tuan",
-      "id": "7FMh0ppTR"
+      "id": "7FMh0ppTR",
+      "phone": "09023426364"
     },
     {
       "name": "Gia Huy",
-      "id": "IOoyR1WrY"
+      "id": "IOoyR1WrY",
+      "phone": "090323423"
     },
     {
       "name": "Truong Hai",
-      "id": "pTmBwT2gJ"
+      "id": "pTmBwT2gJ",
+      "phone": "092342342"
+    },
+    {
+      "name": "Minh Phu Pham",
+      "phone": "002020202",
+      "id": "lFsDmOMNK",
+      "_id": "5d0a673d384ada271444ec5b"
     }
   ]
 }
